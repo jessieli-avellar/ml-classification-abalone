@@ -19,9 +19,9 @@ Nessa análise, foi feita a suposição de que a correta identificação entre u
 
 ```mermaid
 graph TD
-  S@{ shape: sm-circ, label: "Small start" } --> A@{ shape: diamond, label: "O abalone possui mais de 9 anéis?" }
-  A --> B["SIM: Abalone maduro"]
-  A --> C[" NÃO: Abalone jovem"]
+  S@{ shape: sm-circ, label: "Small start" } --> A@{ shape: diamond, label: "O abalone possui **mais de 9** anéis?" }
+  A --> B["**SIM**: Abalone **maduro**"]
+  A --> C["**NÃO**: Abalone **jovem**"]
   B --> t@{ shape: framed-circle, label: "Stop" }
   C --> t@{ shape: framed-circle, label: "Stop" }
 ```
